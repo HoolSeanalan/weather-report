@@ -81,7 +81,7 @@ function getWeather(city, latLng) {
 function getCoordinates() {
     var city = document.getElementById("searchText").value
     $.ajax({
-        url:`http://www.mapquestapi.com/geocoding/v1/address?location=${city.split(" ").join("")}&key=${MAP_KEY}`,
+        url:`https://www.mapquestapi.com/geocoding/v1/address?location=${city.split(" ").join("")}&key=${MAP_KEY}`,
         success: function(res) {
             var city = res.results[0].locations[0].adminArea5
             if (city == "") {
