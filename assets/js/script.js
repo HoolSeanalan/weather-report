@@ -23,7 +23,7 @@ function clearCities() {
 function setCurrent(city, currentWeather) {
     var currentDate = new Date(currentWeather.dt*1000);
     document.getElementById("currentWeather").innerHTML =
-        `<h2>${city} (${currentDate.getMonth()}/${currentDate.getDate()}/${currentDate.getFullYear()})</h2><img src="http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png"></img><br>
+        `<h2>${city} (${currentDate.getMonth()}/${currentDate.getDate()}/${currentDate.getFullYear()})</h2><img src="https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png"></img><br>
         <div>Temp: ${currentWeather.temp} &#176;F</div>
         <div>Wind: ${currentWeather.wind_speed} MPH</div>
         <div>Humidity: ${currentWeather.humidity} %</div>
@@ -97,7 +97,7 @@ function getCoordinates() {
 //getCoordinates() but called by saved city buttons
 function getCoordinatesSaved(city) {
     $.ajax({
-        url:`http://www.mapquestapi.com/geocoding/v1/address?location=${city.split(" ").join("")}&key=${MAP_KEY}`,
+        url:`https://www.mapquestapi.com/geocoding/v1/address?location=${city.split(" ").join("")}&key=${MAP_KEY}`,
         success: function(res) {
             var city = res.results[0].locations[0].adminArea5
             loadCities()
