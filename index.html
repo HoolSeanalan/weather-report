@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Report</title>
+</head>
+
+<body>
+    <!--Top banner/title-->
+    <header class="banner">
+        <h1 id="title">Weather Dashboard</h1>
+    </header>
+
+    <div class="main">
+        <!--Left column used for searching and saved cities-->
+        <div class="searchSavedColumn">
+            <h2>Search for a City:</h2>
+            <input id="searchText" aria-label="search-field">
+            <button id="citySearch">Search</button>
+            <br>
+            <button id="clearCities">Clear Cities</button>
+            <br>
+            <div id="savedCities"></div>
+        </div>
+
+        <!--Weather info display-->
+        <div class="weatherInfo">
+            <div id="weatherDisplay">
+                <div id="currentWeather">Make A Search!</div>
+            </div>
+            <div class="fiveDay">
+                <h2 id="fiveTitle"></h2>
+                <div id="dailyWeather"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Styles title banner */
+.banner {
+    position: absolute;
+    background-image: linear-gradient(to right, #0000FF, #00008B);
+    text-align: center;
+    color: white;
+    top:0;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Styles main content */
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Start of left column styling for searches and saved cities */
+.searchSavedColumn {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    margin-right: 20px;
+}
+
+#citySearch {
+    background-color: #0000FF;
+    color: white;
+}
+
+.searchSavedColumn button {
+    margin-top: 10 px;
+    width: 235px;
+}
+/* End of left column styling */
+
+/* Start of weather display styling and current weather */
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+#currentWeather {
+    border-style:solid;
+    margin: 5px;
+    padding: 50px;
+}
+
+#currentWeather div {
+    margin-top: 10px;
+}
+/* End of current weather styling */
+
+/* Start of next 5 days styling */
+.uv {
+    display: flex;
+    flex-direction: row;
+}
+
+#uvIndex {
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.fiveDay {
+    display: flex;
+    flex-direction: column;
+}
+
+#dailyWeather {
+    display: flex;
+    flex-direction: row;
+    background-color: steelblue;
+    color: white;
+}
+
+.futureDay {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: left;
+}
+/* End of weather styling */
