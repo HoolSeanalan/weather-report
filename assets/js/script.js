@@ -55,7 +55,7 @@ function setDaily(dailyWeather) {
             `${fiveDays}
             <div class="futureDay">
                 <h3>${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</h3>
-                <img src="http://openweathermap.org/img/wn/${dailyWeather[i].weather[0].icon}.png"></img><br>
+                <img src="https://openweathermap.org/img/wn/${dailyWeather[i].weather[0].icon}.png"></img><br>
                 <div>Temp: ${dailyWeather[i].temp.max} &#176;F</div>
                 <div>Wind: ${dailyWeather[i].wind_speed} MPH</div>
                 <div>Humidity: ${dailyWeather[i].humidity} %</div>
